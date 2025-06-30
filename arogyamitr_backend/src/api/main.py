@@ -54,6 +54,37 @@ def health_check():
     return {"message": "Healthy"}
 
 
+# PUBLIC_INTERFACE
+@app.get(
+    "/ping",
+    tags=["Gateway"],
+    summary="API gateway health check / connectivity test",
+    description=(
+        "Returns a status message indicating the backend is reachable by the frontend "
+        "for system integration testing."
+    ),
+    response_model=dict,
+    responses={
+        200: {
+            "description": "Successful ping response",
+            "content": {
+                "application/json": {
+                    "example": {"status": "ok", "message": "Backend is reachable"}
+                }
+            },
+        }
+    },
+)
+def ping():
+    """
+    Ping endpoint for API gateway/healthcheck.
+
+    Returns:
+        dict: Status and info message for connectivity testing.
+    """
+    return {"status": "ok", "message": "Backend is reachable"}
+
+
 # Dependency to get DB session
 def get_db():
     db = SessionLocal()
