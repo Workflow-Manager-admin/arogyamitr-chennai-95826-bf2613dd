@@ -42,7 +42,8 @@ async def recommend_meal(data: RecommendationRequest):
     return Recommendation(
         title="Wholesome South Indian Breakfast",
         summary=(
-            "Based on your dosha and energy level, idli with sambar and coconut chutney is ideal today."
+            "Based on your dosha and energy level, idli with sambar and coconut chutney "
+            "is ideal today."
         ),
         actions=["Have tender coconut water", "Eat before 9am", "Add a fruit bowl"]
     )
