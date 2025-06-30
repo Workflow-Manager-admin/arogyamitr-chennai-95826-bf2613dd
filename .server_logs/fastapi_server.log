@@ -2,3 +2,17 @@ INFO:     Started server process [8117]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:3001 (Press CTRL+C to quit)
+INFO:     100.64.4.167:56732 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     100.64.4.167:56748 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     100.64.4.167:56756 - "GET /docs HTTP/1.1" 200 OK
+INFO:     100.64.4.167:56768 - "GET /docs HTTP/1.1" 200 OK
+INFO:     100.64.4.167:56772 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     100.64.4.167:56782 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     100.64.4.167:54344 - "GET /ping HTTP/1.1" 200 OK
+INFO:     100.64.4.167:59532 - "GET /ping HTTP/1.1" 200 OK
+INFO:     100.64.4.167:34042 - "POST /test/user HTTP/1.1" 200 OK
+INFO:     100.64.4.167:34048 - "POST /test/user HTTP/1.1" 400 Bad Request
+INFO:     100.64.4.167:56982 - "POST /test/user HTTP/1.1" 200 OK
+INFO:     100.64.4.167:44946 - "GET /ping HTTP/1.1" 200 OK
+INFO:     100.64.4.167:50808 - "HEAD /openapi.json HTTP/1.1" 200 OK
+INFO:     100.64.4.167:50824 - "GET /openapi.json HTTP/1.1" 200 OK
